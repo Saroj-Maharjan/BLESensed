@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>UGZeroHarm - Error</title>
+<!-- Google Fonts: Manrope -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#1e1b15",
+                      "on-secondary-fixed-variant": "#534526",
+                      "error-container": "#ffdad6",
+                      "surface-tint": "#765a0c",
+                      "tertiary-fixed": "#d7e2ff",
+                      "surface": "#fff8f2",
+                      "on-primary-container": "#eac46e",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#d9c49c",
+                      "inverse-primary": "#e8c26d",
+                      "primary-container": "#6b5000",
+                      "inverse-surface": "#343029",
+                      "inverse-on-surface": "#f8efe5",
+                      "secondary": "#6c5d3b",
+                      "secondary-fixed": "#f6e0b6",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "surface-container-high": "#efe7dd",
+                      "surface-container": "#f5ede3",
+                      "primary-fixed-dim": "#e8c26d",
+                      "surface-bright": "#fff8f2",
+                      "on-tertiary-fixed-variant": "#294677",
+                      "on-primary": "#ffffff",
+                      "on-primary-fixed-variant": "#5a4300",
+                      "on-tertiary-container": "#b0c9ff",
+                      "on-secondary-container": "#70613f",
+                      "secondary-container": "#f3ddb3",
+                      "on-error-container": "#93000a",
+                      "on-primary-fixed": "#251a00",
+                      "primary": "#4e3a00",
+                      "on-tertiary-fixed": "#001a40",
+                      "on-secondary-fixed": "#251a02",
+                      "surface-container-low": "#fbf2e8",
+                      "background": "#fff8f2",
+                      "surface-container-highest": "#e9e1d7",
+                      "outline": "#7f7666",
+                      "tertiary-fixed-dim": "#acc7ff",
+                      "tertiary-container": "#385486",
+                      "surface-container-lowest": "#ffffff",
+                      "outline-variant": "#d0c5b3",
+                      "tertiary": "#1f3d6d",
+                      "on-surface-variant": "#4d4638",
+                      "on-error": "#ffffff",
+                      "primary-fixed": "#ffdf9b",
+                      "surface-dim": "#e1d9cf",
+                      "surface-variant": "#e9e1d7",
+                      "on-surface": "#1e1b15"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "12px",
+                      "xl": "16px",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "display": ["Manrope"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #FFFBF0; /* Specific brand background from requirements */
+        }
+        .error-vibration {
+            animation: subtle-shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+        }
+        @keyframes subtle-shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6 text-on-surface overflow-hidden">
+<!-- Subtle Background Atmosphere -->
+<div class="fixed inset-0 opacity-20 pointer-events-none">
+
+</div>
+<!-- Main Content Container -->
+<main class="relative z-10 flex flex-col items-center text-center max-w-sm w-full space-y-8">
+<!-- Icon Section -->
+<div class="relative group">
+<!-- Decorative Glow -->
+<div class="absolute inset-0 bg-error/10 blur-3xl rounded-full scale-150 transition-transform duration-700 group-hover:scale-125"></div>
+<div class="relative w-24 h-24 rounded-full bg-error-container/30 flex items-center justify-center border border-error/10 error-vibration">
+<span class="material-symbols-outlined text-6xl text-[#B3261E]" style="font-variation-settings: 'FILL' 1;">
+                    warning
+                </span>
+</div>
+</div>
+<!-- Text Content -->
+<div class="space-y-3">
+<h1 class="text-[32px] font-semibold text-[#4E4730] leading-tight tracking-tight font-headline">
+                Something went wrong
+            </h1>
+<p class="text-on-surface-variant font-body text-base leading-relaxed max-w-[280px] mx-auto">
+                We're having trouble connecting to the safety servers. Please check your connection and try again.
+            </p>
+</div>
+<!-- Action Section -->
+<div class="w-full pt-4">
+<button class="w-full py-4 px-8 bg-[#6B5000] text-[#FFFFFF] rounded-lg font-semibold text-lg shadow-lg shadow-primary/20 hover:bg-primary active:scale-95 transition-all duration-300 flex items-center justify-center space-x-2" onclick="handleRetry(this)">
+<span class="material-symbols-outlined text-xl" id="retry-icon">refresh</span>
+<span id="retry-text">Retry</span>
+</button>
+<!-- Secondary Silent Action -->
+<button class="mt-4 w-full py-2 text-on-surface-variant font-medium text-sm hover:text-primary transition-colors">
+                Contact Support
+            </button>
+</div>
+</main>
+<!-- Footer Identity -->
+<footer class="fixed bottom-8 text-center opacity-40">
+<p class="text-xs font-bold tracking-[0.2em] uppercase text-on-surface-variant">
+            UGZeroHarm Security
+        </p>
+</footer>
+<script>
+        function handleRetry(btn) {
+            const text = document.getElementById('retry-text');
+            const icon = document.getElementById('retry-icon');
+            
+            // Interaction State
+            btn.classList.add('pointer-events-none', 'opacity-90');
+            text.innerText = 'Connecting...';
+            icon.classList.add('animate-spin');
+            
+            // Simulate network request
+            setTimeout(() => {
+                // Return to original state for demo purposes
+                btn.classList.remove('pointer-events-none', 'opacity-90');
+                text.innerText = 'Retry';
+                icon.classList.remove('animate-spin');
+                
+                // Add a little visual bounce on "fail"
+                document.querySelector('.error-vibration').classList.remove('error-vibration');
+                void document.querySelector('.relative.w-24.h-24').offsetWidth; // Trigger reflow
+                document.querySelector('.relative.w-24.h-24').classList.add('error-vibration');
+            }, 1500);
+        }
+    </script>
+</body></html>

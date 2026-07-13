@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="permission_title">Permissions &amp; Services</string>
+    <string name="permission_subtitle">UGZeroHarm requires Bluetooth and Location permissions, and active system services, to scan for nearby safety beacons and maintain zero-harm safety monitoring.</string>
+    <string name="permission_bt_title">Bluetooth Permission</string>
+    <string name="permission_bt_desc">Allows scanning and connecting to safety beacons.</string>
+    <string name="permission_loc_title">Location Permission</string>
+    <string name="permission_loc_desc">Required by the OS to perform Bluetooth scans.</string>
+    <string name="permission_bt_service_title">Bluetooth Service</string>
+    <string name="permission_bt_service_desc">Must be enabled to transmit and receive BLE signals.</string>
+    <string name="permission_loc_service_title">Location Service</string>
+    <string name="permission_loc_service_desc">Must be enabled to detect beacon proximity.</string>
+    <string name="btn_grant">Grant Permission</string>
+    <string name="btn_enable_bluetooth">Enable Bluetooth</string>
+    <string name="btn_enable_location">Enable Location</string>
+    <string name="status_granted">Active</string>
+    <string name="status_missing">Missing</string>
+    <string name="status_enabled">Active</string>
+    <string name="status_disabled">Disabled</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_title">Device Setup</string>
+    <string name="login_header_device_id">Enter 6-Digit Device ID</string>
+    <string name="login_desc_device_id">This ID is used as the unique name for Bluetooth Low Energy advertisement.</string>
+    <string name="login_label_device_id">Device ID</string>
+    <string name="login_placeholder_device_id">e.g., A1B2C3</string>
+    <string name="login_btn_generate_id">Generate Random ID</string>
+    <string name="login_btn_start_advertising">Start Advertising &amp; Continue</string>
+    <string name="login_footnote_bluetooth">Make sure Bluetooth permissions are granted.</string>
+    <string name="login_safety_header">Safety First Architecture</string>
+    <string name="login_safety_body">UGZeroHarm encrypts local broadcast metadata to ensure your tracking keys remain private and secure.</string>
+</resources>

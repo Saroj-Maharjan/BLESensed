@@ -1,0 +1,296 @@
+{
+  "feature": "bledevicelist",
+  "type": "icons",
+  "icons": [
+    {
+      "name": "bluetooth_searching",
+      "style": "outlined",
+      "filled": false,
+      "scope": "chrome",
+      "drawable_name": "bluetooth_searching",
+      "extension": "xml",
+      "drawable_path": "core/designsystem/src/commonMain/composeResources/drawable/bluetooth_searching.xml",
+      "res_reference": "DesignSystemResources.drawable.bluetooth_searching",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/bluetooth_searching/materialsymbolsoutlined/bluetooth_searching_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        },
+        {
+          "state": "empty",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "bookmark",
+      "style": "outlined",
+      "filled": false,
+      "scope": "domain",
+      "drawable_name": "bookmark",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/bookmark.xml",
+      "res_reference": "Res.drawable.bookmark",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/bookmark/materialsymbolsoutlined/bookmark_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        },
+        {
+          "state": "empty",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "progress_activity",
+      "style": "outlined",
+      "filled": false,
+      "scope": "domain",
+      "drawable_name": "progress_activity",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/progress_activity.xml",
+      "res_reference": "Res.drawable.progress_activity",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/progress_activity/materialsymbolsoutlined/progress_activity_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        },
+        {
+          "state": "empty",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "radar",
+      "style": "outlined",
+      "filled": false,
+      "scope": "domain",
+      "drawable_name": "radar",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/radar.xml",
+      "res_reference": "Res.drawable.radar",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/radar/materialsymbolsoutlined/radar_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "radar",
+      "style": "outlined",
+      "filled": true,
+      "scope": "domain",
+      "drawable_name": "radar_fill",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/radar_fill.xml",
+      "res_reference": "Res.drawable.radar_fill",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/radar/materialsymbolsoutlined/radar_fill1_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        },
+        {
+          "state": "empty",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "refresh",
+      "style": "outlined",
+      "filled": false,
+      "scope": "chrome",
+      "drawable_name": "refresh",
+      "extension": "xml",
+      "drawable_path": "core/designsystem/src/commonMain/composeResources/drawable/refresh.xml",
+      "res_reference": "DesignSystemResources.drawable.refresh",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/refresh/materialsymbolsoutlined/refresh_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "failed",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "search_off",
+      "style": "outlined",
+      "filled": false,
+      "scope": "domain",
+      "drawable_name": "search_off",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/search_off.xml",
+      "res_reference": "Res.drawable.search_off",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/search_off/materialsymbolsoutlined/search_off_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "empty",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "style": "outlined",
+      "filled": false,
+      "scope": "chrome",
+      "drawable_name": "settings",
+      "extension": "xml",
+      "drawable_path": "core/designsystem/src/commonMain/composeResources/drawable/settings.xml",
+      "res_reference": "DesignSystemResources.drawable.settings",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/settings/materialsymbolsoutlined/settings_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        },
+        {
+          "state": "empty",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "signal_cellular_alt",
+      "style": "outlined",
+      "filled": false,
+      "scope": "domain",
+      "drawable_name": "signal_cellular_alt",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/signal_cellular_alt.xml",
+      "res_reference": "Res.drawable.signal_cellular_alt",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/signal_cellular_alt/materialsymbolsoutlined/signal_cellular_alt_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "signal_cellular_alt_2_bar",
+      "style": "outlined",
+      "filled": false,
+      "scope": "domain",
+      "drawable_name": "signal_cellular_alt_2_bar",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/signal_cellular_alt_2_bar.xml",
+      "res_reference": "Res.drawable.signal_cellular_alt_2_bar",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/signal_cellular_alt_2_bar/materialsymbolsoutlined/signal_cellular_alt_2_bar_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "terminal",
+      "style": "outlined",
+      "filled": false,
+      "scope": "domain",
+      "drawable_name": "terminal",
+      "extension": "xml",
+      "drawable_path": "feature/bledevicelist/src/commonMain/composeResources/drawable/terminal.xml",
+      "res_reference": "Res.drawable.terminal",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/terminal/materialsymbolsoutlined/terminal_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "success",
+          "count": 1
+        },
+        {
+          "state": "empty",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "name": "warning",
+      "style": "outlined",
+      "filled": true,
+      "scope": "chrome",
+      "drawable_name": "warning_fill",
+      "extension": "xml",
+      "drawable_path": "core/designsystem/src/commonMain/composeResources/drawable/warning_fill.xml",
+      "res_reference": "DesignSystemResources.drawable.warning_fill",
+      "source_url": "https://raw.githubusercontent.com/google/material-design-icons/master/symbols/android/warning/materialsymbolsoutlined/warning_fill1_24px.xml",
+      "download_status": "downloaded",
+      "usage_count": 1,
+      "users": [
+        "bledevicelist"
+      ],
+      "occurrences": [
+        {
+          "state": "failed",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "generator": "download_assets.py",
+  "version": 1
+}

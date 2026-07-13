@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BLE Devices - UGZeroHarm</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#343029",
+                        "on-secondary-container": "#70613f",
+                        "tertiary": "#1f3d6d",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1e1b15",
+                        "tertiary-fixed-dim": "#acc7ff",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#765a0c",
+                        "tertiary-container": "#385486",
+                        "surface-bright": "#fff8f2",
+                        "surface": "#fff8f2",
+                        "outline-variant": "#d0c5b3",
+                        "inverse-primary": "#e8c26d",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#4d4638",
+                        "on-primary-container": "#eac46e",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e9e1d7",
+                        "outline": "#7f7666",
+                        "surface-container-high": "#efe7dd",
+                        "primary": "#4e3a00",
+                        "on-primary-fixed": "#251a00",
+                        "on-secondary-fixed": "#251a02",
+                        "primary-fixed": "#ffdf9b",
+                        "primary-container": "#6b5000",
+                        "on-secondary-fixed-variant": "#534526",
+                        "on-tertiary-fixed-variant": "#294677",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#001a40",
+                        "secondary": "#6c5d3b",
+                        "tertiary-fixed": "#d7e2ff",
+                        "background": "#fff8f2",
+                        "secondary-container": "#f3ddb3",
+                        "primary-fixed-dim": "#e8c26d",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#b0c9ff",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#f6e0b6",
+                        "secondary-fixed-dim": "#d9c49c",
+                        "on-background": "#1e1b15",
+                        "inverse-on-surface": "#f8efe5",
+                        "surface-dim": "#e1d9cf",
+                        "surface-container-low": "#fbf2e8",
+                        "on-error-container": "#93000a",
+                        "surface-container": "#f5ede3",
+                        "surface-container-highest": "#e9e1d7",
+                        "on-primary-fixed-variant": "#5a4300"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "display": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"],
+                        "mono": ["JetBrains Mono"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .animate-spin-custom {
+            animation: spin-slow 2s linear infinite;
+        }
+        .scanner-ripple {
+            position: relative;
+            overflow: hidden;
+        }
+        .scanner-ripple::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(107, 80, 0, 0.05), transparent);
+            transform: translateX(-100%);
+            animation: ripple 2s infinite;
+        }
+        @keyframes ripple {
+            100% { transform: translateX(100%); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body min-h-screen pb-20 selection:bg-primary-fixed-dim">
+<!-- TopAppBar -->
+<header class="flex items-center justify-between px-4 py-2 w-full z-50 sticky top-0 bg-surface dark:bg-surface-dim shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-2xl" data-icon="bluetooth_searching">bluetooth_searching</span>
+<h1 class="font-headline text-headline-lg font-bold text-primary dark:text-primary-fixed-dim leading-none tracking-tight">BLE Devices</h1>
+</div>
+<button class="p-2 rounded-full hover:bg-surface-container-high dark:hover:bg-surface-container-highest transition-colors active:scale-95 transition-transform duration-150">
+<span class="material-symbols-outlined text-on-surface-variant" data-icon="settings">settings</span>
+</button>
+</header>
+<!-- Status Banner (Sticky under App Bar) -->
+<div class="sticky top-[52px] z-40 bg-surface-container-low/95 backdrop-blur-md px-4 py-3 flex items-center justify-between border-b border-outline-variant/30">
+<div class="flex items-center gap-3">
+<div class="relative flex items-center justify-center">
+<span class="material-symbols-outlined text-primary animate-spin-custom text-xl" data-icon="progress_activity">progress_activity</span>
+</div>
+<span class="text-on-surface-variant font-semibold text-sm">Scanning for devices...</span>
+</div>
+<button class="bg-primary-container text-on-primary-fixed px-4 py-1.5 rounded-full text-sm font-bold shadow-sm hover:opacity-90 active:scale-95 transition-all">
+            Stop Scan
+        </button>
+</div>
+<!-- Main Content Area -->
+<main class="px-4 py-6 max-w-2xl mx-auto space-y-4"><div class="flex flex-col items-center justify-center py-20 text-center">
+<span class="material-symbols-outlined text-6xl mb-4 text-outline opacity-40" data-icon="search_off">search_off</span>
+<h2 class="text-xl font-bold text-on-surface mb-1">No devices found</h2>
+<p class="text-sm text-on-surface-variant/60" style="color: #4E4730">Start scanning to discover BLE devices</p>
+</div></main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-16 px-4 pb-2 bg-surface-container dark:bg-surface-container-lowest border-t border-outline-variant dark:border-outline shadow-lg z-50 rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-secondary-container text-on-secondary-container dark:text-on-secondary-container rounded-full px-5 py-1 active:scale-90 transition-all duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="radar" style="font-variation-settings: 'FILL' 1;">radar</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-tighter">Devices</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-5 py-1 hover:bg-surface-variant dark:hover:bg-surface-variant active:scale-90 transition-all duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-tighter">Logs</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant px-5 py-1 hover:bg-surface-variant dark:hover:bg-surface-variant active:scale-90 transition-all duration-100" href="#">
+<span class="material-symbols-outlined" data-icon="bookmark">bookmark</span>
+<span class="font-label text-[10px] font-bold uppercase tracking-tighter">Saved</span>
+</a>
+</nav>
+<!-- FAB (Suppressed on this technical list view as per hierarchy if not primary action, but included here if "Manual Add" or "Filter" was needed. Instructions say suppress on details/transactional, this is a dashboard-level, but usually BLE scanners are automated) -->
+<script>
+        // Simple interaction for cards
+        document.querySelectorAll('article').forEach(card => {
+            card.addEventListener('click', () => {
+                card.classList.add('ring-2', 'ring-primary-container');
+                setTimeout(() => {
+                    card.classList.remove('ring-2', 'ring-primary-container');
+                }, 400);
+            });
+        });
+
+        // Simulating scan results appearing
+        console.log("BLE Scanner Active - Listenening on 2.4GHz...");
+    </script>
+</body></html>

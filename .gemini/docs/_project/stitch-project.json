@@ -1,0 +1,124 @@
+{
+  "projectId": "17847553968061143797",
+  "projectName": "projects/17847553968061143797",
+  "repoName": "UGZeroHarm",
+  "deviceType": "MOBILE",
+  "modelId": "GEMINI_3_FLASH",
+  "designSystem": {
+    "assetId": "8060198493241484919",
+    "name": "assets/8060198493241484919",
+    "colorMode": "LIGHT",
+    "sourceOfTruth": "XTheme.kt",
+    "xthemePath": "core/designsystem/src/commonMain/kotlin/com/anchor/ugzeroharm/designsystem/XTheme.kt",
+    "syncedAt": "2026-06-28T12:44:20Z",
+    "themeSnapshot": {
+      "defaultTheme": "light",
+      "primaryHex": "#6B5000",
+      "paletteCustomized": false,
+      "fontFamily": "Manrope",
+      "stitchFont": "MANROPE",
+      "roundness": "ROUND_TWELVE",
+      "light": {
+        "primary": "#6B5000",
+        "background": "#FFFBF0",
+        "surface": "#FFFDF6",
+        "error": "#B3261E",
+        "onSurfaceVariant": "#4E4730"
+      },
+      "dark": {
+        "primary": "#F5D76E",
+        "background": "#0F0D09",
+        "surface": "#1C1910",
+        "error": "#FFB4AB",
+        "onSurfaceVariant": "#C4BA94"
+      }
+    }
+  },
+  "sharedStateScreens": {
+    "loading": {
+      "screenId": "054a05c299b04d9cbcbe1ddc794e442d",
+      "screenName": "projects/17847553968061143797/screens/054a05c299b04d9cbcbe1ddc794e442d",
+      "screenshot": ".gemini/docs/_shared/designs/loading.png",
+      "htmlPath": ".gemini/docs/_shared/designs/extracted/stitch_loading.html",
+      "tokensPath": ".gemini/docs/_shared/designs/extracted/tokens_loading.md",
+      "dimensions": {
+        "width": 780,
+        "height": 1768
+      },
+      "generatedAt": "2026-06-28T12:46:25Z",
+      "designSystemApplied": true,
+      "codeImplemented": true
+    },
+    "failed": {
+      "screenId": "2d8a59bda88e4089a0da57cbf1bfad47",
+      "screenName": "projects/17847553968061143797/screens/2d8a59bda88e4089a0da57cbf1bfad47",
+      "screenshot": ".gemini/docs/_shared/designs/failed.png",
+      "htmlPath": ".gemini/docs/_shared/designs/extracted/stitch_failed.html",
+      "tokensPath": ".gemini/docs/_shared/designs/extracted/tokens_failed.md",
+      "dimensions": {
+        "width": 780,
+        "height": 1768
+      },
+      "generatedAt": "2026-06-28T12:47:30Z",
+      "designSystemApplied": true,
+      "codeImplemented": true
+    }
+  },
+  "features": {
+    "bledevicelist": {
+      "successScreenId": "debb146d7e654445823f5ac5cc174bd2",
+      "successScreenName": "projects/17847553968061143797/screens/debb146d7e654445823f5ac5cc174bd2",
+      "emptyScreenId": "7df29b70c5d44e9e97c11d97065999b4",
+      "states": {
+        "loading": true,
+        "failed": true,
+        "empty": true
+      },
+      "screenshot": ".gemini/docs/bledevicelist/designs/bledevicelist.png",
+      "htmlPath": ".gemini/docs/bledevicelist/designs/extracted/stitch_success.html",
+      "tokensPath": ".gemini/docs/bledevicelist/designs/extracted/tokens_success.md",
+      "dimensions": {
+        "width": 780,
+        "height": 2382
+      },
+      "designFile": ".gemini/docs/bledevicelist/designs/bledevicelist.md",
+      "blueprintFile": ".gemini/docs/bledevicelist/designs/bledevicelist_blueprint.md",
+      "approved": true,
+      "approvedAt": "2026-06-28T12:51:23Z",
+      "blueprintConsumed": false,
+      "createdAt": "2026-06-28T12:48:00Z",
+      "updatedAt": "2026-06-28T12:52:45Z"
+    },
+    "login": {
+      "successScreenId": "cbd3cb6c82e74ff5a3461c35d2bff7b9",
+      "successScreenName": "projects/17847553968061143797/screens/cbd3cb6c82e74ff5a3461c35d2bff7b9",
+      "emptyScreenId": null,
+      "states": {
+        "loading": true,
+        "failed": true,
+        "empty": false
+      },
+      "screenshot": ".gemini/docs/login/designs/login.png",
+      "htmlPath": ".gemini/docs/login/designs/extracted/stitch_success.html",
+      "tokensPath": ".gemini/docs/login/designs/extracted/tokens_success.md",
+      "dimensions": {
+        "width": 780,
+        "height": 1768
+      },
+      "designFile": ".gemini/docs/login/designs/login.md",
+      "blueprintFile": ".gemini/docs/login/designs/login_blueprint.md",
+      "approved": true,
+      "approvedAt": "2026-06-28T13:37:00Z",
+      "blueprintConsumed": true,
+      "createdAt": "2026-06-28T13:27:00Z",
+      "updatedAt": "2026-07-12T02:52:45Z"
+    }
+  },
+  "initState": {
+    "projectCreated": true,
+    "designSystemCreated": true,
+    "completedAt": "2026-06-28T12:44:20Z"
+  },
+  "createdAt": "2026-06-28T20:45:00Z",
+  "updatedAt": "2026-07-12T02:52:45Z"
+}
